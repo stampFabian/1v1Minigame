@@ -21,4 +21,10 @@ public class MainActivity extends AppCompatActivity {
         button.setScaleY(button.getScaleY() + 1);
         x++;
     }
+
+    public void player2(View v){
+        Button button = findViewById(R.id.btn_p2);
+        button.setScaleY(button.getScaleY() + 1);
+        x++;
+    }
 }
