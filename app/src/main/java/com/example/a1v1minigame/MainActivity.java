@@ -16,15 +16,25 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+
+
     public void player1(View v){
-        Button button = findViewById(R.id.btn_p1);
-        button.setScaleY(button.getScaleY() + 1);
+        Button btn1 = findViewById(R.id.btn_p1);
+        btn1.setScaleY(btn1.getScaleY() + 1);
         x++;
     }
 
     public void player2(View v){
-        Button button = findViewById(R.id.btn_p2);
-        button.setScaleY(button.getScaleY() + 1);
+        Button btn2 = findViewById(R.id.btn_p2);
+        btn2.setScaleY(btn2.getScaleY() + 1);
         x++;
+    }
+
+    private void calc(View v){
+        Button btn1 = findViewById(R.id.btn_p1);
+        Button btn2 = findViewById(R.id.btn_p2);
+        if(btn1.getScaleY() >= btn2.getScaleY()){
+            btn2.setScaleY(100);
+        }
     }
 }
