@@ -11,14 +11,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
-        android:layout_marginBottom="684dp"
+        android:layout_marginBottom="688dp"
+        android:backgroundTint="#FF0000"
         android:hint="."
         android:onClick="player2"
         android:rotation="180"
         android:scaleX="100"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.006"
+        app:layout_constraintHorizontal_bias="0.023"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -26,6 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
+        android:backgroundTint="#0027FF"
         android:hint="."
         android:onClick="player1"
         android:scaleX="100"
