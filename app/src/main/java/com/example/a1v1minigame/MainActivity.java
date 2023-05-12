@@ -50,16 +50,27 @@ public class MainActivity extends AppCompatActivity {
         ProgressBar pgBar = findViewById(R.id.pgBar);
         TextView tv1 = findViewById(R.id.tv1);
         TextView tv2 = findViewById(R.id.tv2);
+        Button btnReplay = findViewById(R.id.btnReplay);
         if(pgBar.getProgress() == 100){
             tv2.setVisibility(View.VISIBLE);
+            btnReplay.setVisibility(View.VISIBLE);
+            btnReplay.setRotation(180);
             btn1.setEnabled(false);
             btn2.setEnabled(false);
         }
 
         if(pgBar.getProgress() == 0){
             tv1.setVisibility(View.VISIBLE);
+            btnReplay.setVisibility(View.VISIBLE);
             btn1.setEnabled(false);
             btn2.setEnabled(false);
         }
+    }
+
+    public void playAgain(View v){
+        ProgressBar pgBar = findViewById(R.id.pgBar);
+        pgBar.setProgress(50);
+        recreate();
+
     }
 }

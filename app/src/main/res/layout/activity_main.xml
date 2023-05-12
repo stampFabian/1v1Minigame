@@ -86,4 +86,20 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <Button
+        android:id="@+id/btnReplay"
+        style="@style/Widget.Material3.ExtendedFloatingActionButton.Icon.Surface"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#434343"
+        android:onClick="playAgain"
+        android:text="Play Again?"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/tv1"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
