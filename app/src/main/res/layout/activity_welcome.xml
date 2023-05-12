@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#373737">
 
     <Button
         android:id="@+id/btn_start"
@@ -11,6 +12,8 @@
         android:layout_height="108dp"
         android:layout_marginStart="119dp"
         android:layout_marginBottom="138dp"
+        android:backgroundTint="#FF5722"
+        android:fontFamily="@font/bungee_inline"
         android:text="Start"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,10 +23,25 @@
         android:id="@+id/textView"
         android:layout_width="413dp"
         android:layout_height="111dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="160dp"
         android:fontFamily="@font/faster_one"
-        android:text="TextView"
+        android:text="the game"
+        android:textColor="#FFFFFF"
         android:textSize="72sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/faster_one"
+        android:text="+1"
+        android:textColor="#FFFFFF"
+        android:textSize="96sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
