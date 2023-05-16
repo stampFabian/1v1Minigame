@@ -2,6 +2,7 @@ package com.example.a1v1minigame;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,6 +20,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Button BackButton = findViewById(R.id.btn_back);
+        Button ResetButton = findViewById(R.id.btn_reset);
+
+        BackButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, WelcomeActivity.class);
+            startActivity(intent);
+        });
+
+        ResetButton.setOnClickListener(v -> playAgain(v));
     }
 
     public void player1(View v){
@@ -71,6 +82,5 @@ public class MainActivity extends AppCompatActivity {
         ProgressBar pgBar = findViewById(R.id.pgBar);
         pgBar.setProgress(50);
         recreate();
-
     }
 }
